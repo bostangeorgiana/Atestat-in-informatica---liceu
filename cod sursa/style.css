@@ -1,0 +1,112 @@
+body{
+margin: 0;
+}
+
+*{  /* pt orice element din site */
+    box-sizing: border-box;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+p{ 
+color:red; }
+
+ul {
+    list-style-type: none;    
+    background-color: brown;
+    padding-left: 0px;
+    display: flex;   /*proprietate data parintelui*/
+    height: auto;
+    flex-wrap: wrap;    /* cad una sub alta la nevoie*/
+    align-items: stretch;  /* ca sa nu ramana spatiu 4*/
+    align-items: center; /*face ca scrisul sa se situieze la distanata egala fata de marginea de sus si de jos a chenarului */
+}
+
+ul li a{
+    /* display: inline-block; */
+    margin-bottom: 10px;
+    padding: 10 px;
+    color: white;
+    display: flex;
+    padding-right: 12px;  
+    padding-left: 5px;
+    text-emphasis: none;
+}
+
+.dreapta {
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-start;
+    font-size: 1.5rem;   /*ceea ce înseamnă că trebuie să aibă mărimea 1.5 față de mărimea font-ului de bază*/
+}    
+
+a:link { text-decoration: none; } /* Link ul ramane fara linie */
+
+a:hover { background: rgba(212, 219, 192, 0.3) }  /* Link ul are fundal semitransparent cand il atingi */
+
+h1{
+    font-size: 50px;
+}
+
+
+.caracteristici {
+    background-color: blanchedalmond;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.paragrafe{
+    justify-content: center;
+    list-style-type: none;
+}
+
+.caracteristici > div > div> div> img {
+    border-radius: 50%;
+    background-color:grey;
+    border: 5px;
+  }
+
+footer{
+    text-align: center;
+    background-color: khaki;
+    
+}
+
+.arc > footer > img {
+width: 10%;
+height: auto;
+max-width: 100px;
+
+
+}
+.email{
+    text-align: center;
+}
+
+.card-img-top{
+    width: 60px;
+    height: 400px;
+}
+
+.arc > footer {
+    margin-bottom: 50px solid khaki;
+    margin-top: 50px solid khaki;
+    padding: 0 20px solid khaki;
+    text-align: center;
+    
+}
+
+    .main-carousel .carousel-item > div{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-carousel .carousel-item > div:before {
+        content: "";
+        display: block;
+        padding-top: 40%;
+
+    }
